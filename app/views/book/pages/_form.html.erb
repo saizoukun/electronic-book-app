@@ -1,0 +1,22 @@
+<%= form_for(@book_page) do |f| %>
+  <% if @book_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book_page.errors.count, "error") %> prohibited this book_page from being saved:</h2>
+
+      <ul>
+      <% @book_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

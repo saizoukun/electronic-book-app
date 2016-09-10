@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ #container{
+   width: 600px;
+   max-width: 100%;
+   margin: 0 auto;
+ }
+
+table{
+  border-collapse:collapse;
+  width: 100%;
+}
+
+th, td {
+  border:  1px solid #ccc;
+  padding: 10px;
+}
+
+a, input[type="submit"] {
+display: inline-block;
+padding: 4px 10px;
+border: 1px solid #ccc;
+background-color: #efefef;
+color: #333;
+border-radius: 4px;
+text-decoration: none;
+font-size: 100%;
+}
+
+input[type="text"],textarea{
+  display: block;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 4px;
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  -ms-image-rendering: optimaizeQuality;
+}
+
+td.with-image{
+  width: 200px;
+}
+
+td.with-button{
+  text-align: center;
+}

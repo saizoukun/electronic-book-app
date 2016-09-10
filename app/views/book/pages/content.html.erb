@@ -1,0 +1,34 @@
+</xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=<%= @size[0] %>, height=<%= @size[1] %>">
+  <style>
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  img, svg{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="100%" height="100%" viewBox="0 0 <%= @size[0] %> <%= @size[1] %> "
+  >
+
+  <image
+  width="<%= @size[0] %>"
+  height="<%= @size[1] %>"
+  xlink:href="data:image/<%= @type %>;base64,<%= @blob %>"
+  >
+  </svg>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @book_page.book %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @book_page.image %>
+</p>
+
+<%= link_to 'Edit', edit_book_page_path(@book_page) %> |
+<%= link_to 'Back', book_pages_path %>
